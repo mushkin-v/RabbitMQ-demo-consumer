@@ -1,4 +1,4 @@
-RabbitMQ file reciever on Symfony 
+RabbitMQ file reciever(consumer) on Symfony 
 DEMO(not for use)
 ==========
 Commands:
