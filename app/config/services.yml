@@ -1,0 +1,8 @@
+parameters:
+#    parameter_name: value
+
+services:
+    upload_audio_file_service:
+        class: AppBundle\Consumer\UploadAudioFileConsumer
+        arguments: ["@dubture_ffmpeg.ffmpeg", "@=container.hasParameter('mq.save_files_path') ? parameter('mq.save_files_path') : './web/uploads/'"]
+#        arguments: ["@=container.hasParameter('mq.save_files_path') ? parameter('mq.save_files_path') : './web/uploads/'"]
